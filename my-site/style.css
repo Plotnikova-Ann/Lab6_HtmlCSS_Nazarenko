@@ -140,3 +140,49 @@ section h2 {
     border-bottom: 2px solid #eef2ff;
     padding-bottom: 10px;
 }
+
+/* Стили для SVG */
+.logo {
+    border: 2px solid #2a6df4;
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(42, 109, 244, 0.2);
+}
+
+.logo:focus {
+    outline: 3px solid #2a6df4;
+    outline-offset: 5px;
+}
+
+/* Стили для скрытых элементов */
+[hidden] {
+    display: none;
+}
+
+/* Стили для списка преимуществ */
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Стили для ссылки в подвале */
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}

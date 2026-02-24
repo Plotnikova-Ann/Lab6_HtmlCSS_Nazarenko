@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Графика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SVG Графика</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Главная</a> |
+        <a href="media.html">Медиа</a> |
+        <a href="forms.html">Формы</a> |
+        <a href="vector.html">SVG</a>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Пример SVG</h2>
+            
+            <svg width="300" height="150" class="logo" title="SVG пример" tabindex="0">
+                <!-- Прямоугольник (фон) -->
+                <rect width="300" height="150" fill="#eef2ff" rx="10" ry="10" />
+                
+                <!-- Круг -->
+                <circle cx="150" cy="75" r="50" fill="#2a6df4" />
+                
+                <!-- Текст -->
+                <text x="115" y="85" fill="white" font-family="Arial" font-size="24" font-weight="bold">SVG</text>
+                
+                <!-- Дополнительные элементы -->
+                <line x1="50" y1="120" x2="250" y2="120" stroke="white" stroke-width="2" />
+                <circle cx="100" cy="45" r="5" fill="white" />
+                <circle cx="200" cy="45" r="5" fill="white" />
+            </svg>
+            
+            <p hidden>Скрытый текст (не виден на странице)</p>
+            
+            <h3>Что мы использовали в SVG:</h3>
+            <ul>
+                <li><strong>&lt;rect&gt;</strong> — прямоугольник (фон с закругленными углами)</li>
+                <li><strong>&lt;circle&gt;</strong> — круг (основной элемент)</li>
+                <li><strong>&lt;text&gt;</strong> — текст внутри SVG</li>
+                <li><strong>&lt;line&gt;</strong> — линия</li>
+                <li><strong>fill</strong> — цвет заливки</li>
+                <li><strong>cx, cy, r</strong> — координаты и радиус круга</li>
+                <li><strong>rx, ry</strong> — закругление углов прямоугольника</li>
+                <li><strong>tabindex="0"</strong> — делает SVG фокусируемым</li>
+                <li><strong>hidden</strong> — скрывает элемент</li>
+            </ul>
+        </section>
+        
+        <aside>
+            <h3>О SVG</h3>
+            <p>SVG (Scalable Vector Graphics) — это векторный формат изображений.</p>
+            <p><strong>Преимущества SVG:</strong></p>
+            <ul>
+                <li>Масштабируется без потери качества</li>
+                <li>Меньший размер по сравнению с растровыми изображениями</li>
+                <li>Можно редактировать в любом текстовом редакторе</li>
+                <li>Поддерживает анимацию и интерактивность</li>
+                <li>Доступен для SEO и скринридеров</li>
+            </ul>
+        </aside>
+    </main>
+    
+    <footer id="footer">
+        <a href="index.html">← Назад на главную</a>
+        <p>© 2025 | Назаренко Анна | ИС-21</p>
+    </footer>
+</body>
+</html>

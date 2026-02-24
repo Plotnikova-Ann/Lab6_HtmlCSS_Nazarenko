@@ -106,3 +106,37 @@ button:hover {
 button[type="reset"] {
     background: #6c757d;
 }
+
+/* Стили для медиа-элементов */
+video, audio, iframe {
+    max-width: 100%;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+video, iframe {
+    border: 2px solid #eef2ff;
+}
+
+audio {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* Стили для секций с медиа */
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #2a6df4;
+    margin-top: 0;
+    border-bottom: 2px solid #eef2ff;
+    padding-bottom: 10px;
+}

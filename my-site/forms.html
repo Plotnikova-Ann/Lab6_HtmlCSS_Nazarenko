@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы - История ЭВМ</title>
+</head>
+<body>
+    <header>
+        <h1>Различные типы input</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Главная</a> |
+        <a href="media.html">Медиа</a> |
+        <a href="forms.html">Формы</a> |
+        <a href="vector.html">SVG</a>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Регистрация</h2>
+            
+            <form>
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    
+                    <p>
+                        <label>Обычный текст: <input type="text" placeholder="Введите текст"></label>
+                    </p>
+                    
+                    <p>
+                        <label>Телефон: <input type="tel" placeholder="+7 (___) ___-__-__"></label>
+                    </p>
+                    
+                    <p>
+                        <label>Email: <input type="email" placeholder="example@mail.com"></label>
+                    </p>
+                    
+                    <p>
+                        <label>Пароль: <input type="password" placeholder="Введите пароль"></label>
+                    </p>
+                    
+                    <p>
+                        <label>Сайт: <input type="url" placeholder="https://example.com"></label>
+                    </p>
+                    
+                    <p>
+                        <label>Поиск: <input type="search" placeholder="Поиск..."></label>
+                    </p>
+                    
+                    <p>
+                        <label>Число: <input type="number" value="18" min="0" max="100"></label>
+                    </p>
+                    
+                    <p>
+                        <label>Дата: <input type="date"></label>
+                    </p>
+                    
+                    <p>
+                        <label>Цвет: <input type="color" value="#2a6df4"></label>
+                    </p>
+                    
+                    <p>
+                        <label>Чекбокс: <input type="checkbox"> Я согласен</label>
+                    </p>
+                    
+                    <p>
+                        Пол:<br>
+                        <label><input type="radio" name="gender" value="male"> Мужской</label>
+                        <label><input type="radio" name="gender" value="female"> Женский</label>
+                    </p>
+                    
+                    <p>
+                        <label>Файл: <input type="file"></label>
+                    </p>
+                    
+                    <p>
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Сбросить">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Таблица типов input</h2>
+            <table border="1" cellpadding="8">
+                <caption>Типы полей ввода</caption>
+                <tr>
+                    <th>Тип</th>
+                    <th>Описание</th>
+                    <th>Пример</th>
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td>Обычное текстовое поле</td>
+                    <td><input type="text" value="Текст"></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>Поле для пароля</td>
+                    <td><input type="password" value="12345"></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>Поле для email</td>
+                    <td><input type="email" value="test@mail.com"></td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td>Только цифры</td>
+                    <td><input type="number" value="42"></td>
+                </tr>
+                <tr>
+                    <td>tel</td>
+                    <td>Телефон</td>
+                    <td><input type="tel" value="+7 999 123-45-67"></td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td>Ссылка</td>
+                    <td><input type="url" value="https://example.com"></td>
+                </tr>
+                <tr>
+                    <td>search</td>
+                    <td>Поиск</td>
+                    <td><input type="search" value="запрос"></td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td>Дата</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>checkbox</td>
+                    <td>Чекбокс</td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td>radio</td>
+                    <td>Радиокнопка</td>
+                    <td><input type="radio" checked></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p><a href="index.html">← Назад на главную</a></p>
+        <p>&copy; 2025 | Назаренко Анна | ИС-232</p>
+    </footer>
+</body>
+</html>

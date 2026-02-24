@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Формы - История ЭВМ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -26,129 +27,77 @@
                     <legend>Личные данные</legend>
                     
                     <p>
-                        <label>Обычный текст: <input type="text" placeholder="Введите текст"></label>
+                        <label>Имя пользователя:</label>
+                        <input type="text" placeholder="Введите имя">
                     </p>
                     
                     <p>
-                        <label>Телефон: <input type="tel" placeholder="+7 (___) ___-__-__"></label>
+                        <label>Телефон:</label>
+                        <input type="tel" placeholder="+7 (___) ___-__-__">
                     </p>
                     
                     <p>
-                        <label>Email: <input type="email" placeholder="example@mail.com"></label>
+                        <label>Email:</label>
+                        <input type="email" placeholder="example@mail.com">
                     </p>
                     
                     <p>
-                        <label>Пароль: <input type="password" placeholder="Введите пароль"></label>
+                        <label>Пароль:</label>
+                        <input type="password" placeholder="Введите пароль">
                     </p>
                     
                     <p>
-                        <label>Сайт: <input type="url" placeholder="https://example.com"></label>
+                        <label>Сайт:</label>
+                        <input type="url" placeholder="https://example.com">
                     </p>
                     
                     <p>
-                        <label>Поиск: <input type="search" placeholder="Поиск..."></label>
+                        <label>Поиск:</label>
+                        <input type="search" placeholder="Поиск...">
                     </p>
                     
                     <p>
-                        <label>Число: <input type="number" value="18" min="0" max="100"></label>
+                        <label>Возраст:</label>
+                        <input type="number" min="0" max="120" value="18">
                     </p>
                     
                     <p>
-                        <label>Дата: <input type="date"></label>
+                        <label>Дата рождения:</label>
+                        <input type="date">
                     </p>
                     
                     <p>
-                        <label>Цвет: <input type="color" value="#2a6df4"></label>
+                        <label>Пол:</label>
+                        <select>
+                            <option>Мужской</option>
+                            <option>Женский</option>
+                        </select>
                     </p>
                     
                     <p>
-                        <label>Чекбокс: <input type="checkbox"> Я согласен</label>
+                        <label>
+                            <input type="checkbox"> Я согласен с условиями
+                        </label>
                     </p>
                     
                     <p>
-                        Пол:<br>
-                        <label><input type="radio" name="gender" value="male"> Мужской</label>
-                        <label><input type="radio" name="gender" value="female"> Женский</label>
-                    </p>
-                    
-                    <p>
-                        <label>Файл: <input type="file"></label>
-                    </p>
-                    
-                    <p>
-                        <input type="submit" value="Отправить">
-                        <input type="reset" value="Сбросить">
+                        <button type="submit" class="btn-primary">Отправить</button>
+                        <button type="reset">Очистить</button>
                     </p>
                 </fieldset>
             </form>
         </section>
         
-        <section>
-            <h2>Таблица типов input</h2>
-            <table border="1" cellpadding="8">
-                <caption>Типы полей ввода</caption>
-                <tr>
-                    <th>Тип</th>
-                    <th>Описание</th>
-                    <th>Пример</th>
-                </tr>
-                <tr>
-                    <td>text</td>
-                    <td>Обычное текстовое поле</td>
-                    <td><input type="text" value="Текст"></td>
-                </tr>
-                <tr>
-                    <td>password</td>
-                    <td>Поле для пароля</td>
-                    <td><input type="password" value="12345"></td>
-                </tr>
-                <tr>
-                    <td>email</td>
-                    <td>Поле для email</td>
-                    <td><input type="email" value="test@mail.com"></td>
-                </tr>
-                <tr>
-                    <td>number</td>
-                    <td>Только цифры</td>
-                    <td><input type="number" value="42"></td>
-                </tr>
-                <tr>
-                    <td>tel</td>
-                    <td>Телефон</td>
-                    <td><input type="tel" value="+7 999 123-45-67"></td>
-                </tr>
-                <tr>
-                    <td>url</td>
-                    <td>Ссылка</td>
-                    <td><input type="url" value="https://example.com"></td>
-                </tr>
-                <tr>
-                    <td>search</td>
-                    <td>Поиск</td>
-                    <td><input type="search" value="запрос"></td>
-                </tr>
-                <tr>
-                    <td>date</td>
-                    <td>Дата</td>
-                    <td><input type="date"></td>
-                </tr>
-                <tr>
-                    <td>checkbox</td>
-                    <td>Чекбокс</td>
-                    <td><input type="checkbox" checked></td>
-                </tr>
-                <tr>
-                    <td>radio</td>
-                    <td>Радиокнопка</td>
-                    <td><input type="radio" checked></td>
-                </tr>
-            </table>
-        </section>
+        <aside>
+            <h3>О формах</h3>
+            <p>Формы используются для сбора данных от пользователей.</p>
+            <p>Разные типы input помогают валидировать данные прямо в браузере.</p>
+        </aside>
     </main>
     
     <footer>
-        <p><a href="index.html">← Назад на главную</a></p>
-        <p>&copy; 2025 | Назаренко Анна | ИС-232</p>
+        <a href="index.html">← Назад на главную</a>
+        <p> 2025 | Назаренко Анна | ИС-232</p>
     </footer>
 </body>
 </html>
